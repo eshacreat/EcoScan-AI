@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # --- CONFIGURATION ---
 # PASTE YOUR API KEY HERE
-PAGESPEED_KEY = "AIzaSyDmxKfp9yzf3XUZ6JwIisegZ8qG1MBLtrY" 
+PAGESPEED_KEY = os.getenv("PAGESPEED_KEY")
 
 # --- AI LOGIC FUNCTION ---
 def get_eco_status(score):
